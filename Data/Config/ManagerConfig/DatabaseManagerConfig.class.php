@@ -20,11 +20,11 @@ class DatabaseManagerConfig extends BaseConfig
 			* First database is used for regular game data
 			*/
 			array(
-				'driver' 	=> 'mysql',
-				'host' 		=> 'localhost',
-				'name' 		=> 'db822006023',
-				'user' 		=> 'dbo822006023',
-				'password' 	=> '>,4A:<}cmlf3fQ6rFH1ySI',
+				'driver' 	=> '',
+				'host' 		=> '',
+				'name' 		=> '',
+				'user' 		=> '',
+				'password' 	=> '',
 				'charset' 	=> 'utf8mb4',
 				'port' 		=> 3306
 			),
@@ -34,11 +34,11 @@ class DatabaseManagerConfig extends BaseConfig
 			* Second database allows you to store accounts for multiple games in a central place
 			*/
 			array(
-				'driver' 	=> 'mysql',
-				'host' 		=> 'localhost',
-				'name' 		=> 'db669976274',
-				'user' 		=> 'dbo669976274',
-				'password' 	=> '<;3B,>{dcbt9dZ3nGU8xOJ',
+				'driver' 	=> '',
+				'host' 		=> '',
+				'name' 		=> '',
+				'user' 		=> '',
+				'password' 	=> '',
 				'charset' 	=> 'utf8mb4',
 				'port' 		=> 3306
 			)	
