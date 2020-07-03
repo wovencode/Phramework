@@ -1,0 +1,58 @@
+==========================================================================================
+Todo List
+==========================================================================================
+
+
+MESSAGE (icon, duration, pinned, text (one-liner), lootId, accept, cancel)
+MESSAGE MANAGER (only event messages, game news, guild invites and presents)
+Inbox Icon
+Inbox Page
+Inbox Entry Pagelet
+
+
+report avatar
+penalty points and veryRiskyActions in account data
+new system tasks to remove reported avatars and decay penalty points
+
+==========================================================================================
+
+VIRTUAL CURRENCY (nowValue, maxValue, regenerationValue, maxBonus, regenerationBonus)
+VIRTUAL CURRENCY MANAGER (recalculateMaxValue, recalculateRegenerationValue)
+
+
+icon
+expires
+received
+text (one-liner)
+accept
+cancel
+lootId
+
+friendlist
+add friend
+remove friend
+
+==========================================================================================
+
+test caching
+unique cache name by language
+body template start/end
+minify html output
+
+==========================================================================================
+
+discord manager
+patreon manager
+payment manager / payment provider
+abstract payment provider
+paypal payment provider
+DebugManager - log/performance tools
+VIRTUAL ITEM MANAGER      | Manages a entities or players item inventory
+VIRTUAL ITEM              | A single item (Weapon, Armor, Artefact etc.)
+VIRTUAL ENTITY MANAGER    | Manages a players entities (like heroes, buildings etc.)
+VIRTUAL ENTIY             | A single entity (hero, building etc.)
+BUFF
+ENTITY BUFF
+UPGRADE
+SHOP MANAGER              | Allows players to buy/sell virtual items/entities
+REWARD MANAGER            | All kind of player rewards (loot, login-bonus etc.)

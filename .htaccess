@@ -1,0 +1,12 @@
+# Activate ModRewrite
+RewriteEngine On
+
+# Set RewriteBase
+RewriteBase /
+
+# Do not use ModRewrite on Files and Folders
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite URL
+RewriteRule (.+) index.php?p=$0 [QSA,L]

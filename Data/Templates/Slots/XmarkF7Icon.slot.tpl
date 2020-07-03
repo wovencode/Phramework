@@ -1,0 +1,1 @@
+<i class="icon f7-icons size-{size} color-red">xmark_circle</i>

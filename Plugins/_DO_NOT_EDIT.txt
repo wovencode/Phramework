@@ -1,0 +1,6 @@
+/*
+
+	The "plugins" folder contains 3rd party plugins. Its contents should never be
+	modified or deleted, otherwise the framework won't be functional anymore.
+
+*/

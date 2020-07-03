@@ -1,0 +1,24 @@
+.size-96 { font-size: 96px; }
+
+.ph-icon-size-xxs { width: 14px; height: 14px; vertical-align:middle; }
+.ph-icon-size-xs { width: 21px; height: 21px; vertical-align:middle;}
+.ph-icon-size-s { width: 28px; height: 28px; vertical-align:middle;}
+.ph-icon-size-m { width: 32px; height: 32px; vertical-align:middle;}
+.ph-icon-size-l { width: 56px; height: 56px;  vertical-align:middle;}
+.ph-icon-size-xl { width: 64px; height: 64px;  vertical-align:middle;}
+.ph-icon-size-xxl { width: 96px; height: 96px;  vertical-align:middle;}
+
+.ph-hidden {
+	display: none;
+}
+
+.ph-center {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+}
+
+.ph-modal-window {
+	z-index: 10;
+}

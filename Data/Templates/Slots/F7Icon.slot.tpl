@@ -1,0 +1,1 @@
+<i class="icon f7-icons size-{size} color-{color}">{icon}</i>

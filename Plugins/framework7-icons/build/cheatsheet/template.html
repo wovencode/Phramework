@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{font_name}} v{{font_version}} Cheatsheet</title>
+  <link href="../css/framework7-icons.css" rel="stylesheet" type="text/css" />
+  <style>
+    {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    body {
+      background: #fff;
+      color: #333;
+      font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+    header h1 {
+      font-size: 21px;
+      font-weight: 400;
+    }
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 960px;
+    }
+    .icons {
+      overflow: hidden;
+    }
+    .content .icon-cell .f7-icons {
+      cursor: pointer;
+    }
+    .content {
+      padding-bottom: 250px;
+    }
+    .icons .icon-cell {
+      float: left;
+      width: calc(100% / 7);
+      text-align: center;
+      height: 100px;
+      margin-top: 30px;
+    }
+    .icons .icon-name,
+    .icons .icon-size {
+      display: block;
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      word-break: break-all;
+    }
+    .f7-icons.size-14 {
+      font-size: 14px;
+    }
+    .f7-icons.size-20 {
+      font-size: 20px;
+    }
+    .f7-icons.size-24 {
+      font-size: 24px;
+    }
+    .f7-icons.size-28 {
+      font-size: 28px;
+    }
+    .f7-icons.size-32 {
+      font-size: 32px;
+    }
+    .f7-icons.size-56 {
+      font-size: 56px;
+    }
+    .f7-icons.size-112 {
+      font-size: 112px;
+    }
+    .icon-preview {
+      box-shadow: 0px -10px 20px rgba(0,0,0,0.3);
+      background: #fff;
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      margin-left: -480px;
+      z-index: 100;
+      width: 960px;
+      display: none;
+    }
+    @media (max-width: 960px) {
+      .icon-preview {
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .icon-preview .icons {
+      font-size: 0;
+      padding-bottom: 10px;
+    }
+    .icon-preview .icon-cell {
+      float: none;
+      display: inline-block;
+      margin: 0;
+      vertical-align: bottom;
+      height: auto;
+    }
+    .icon-preview .icon-preview-name {
+      font-size: 18px;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <header>
+      <h1>{{font_name}} v{{font_version}} Cheatsheet, <b>{{icon_count}}</b> icons:</h1>
+    </header>
+    <div class="content">
+      <div class="icons">
+        {{content}}
+      </div>
+    </div>
+  </div>
+  <div class="icon-preview">
+    <div class="icon-preview-name">Icon: <b>home</b></div>
+    <div class="icons">
+      <div class="icon-cell">
+        <div class="f7-icons size-14">home</div>
+        <div class="icon-size">14px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-20">home</div>
+        <div class="icon-size">20px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-24">home</div>
+        <div class="icon-size">24px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-28">home</div>
+        <div class="icon-size">28px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-32">home</div>
+        <div class="icon-size">32px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-56">home</div>
+        <div class="icon-size">56px</div>
+      </div>
+      <div class="icon-cell">
+        <div class="f7-icons size-112">home</div>
+        <div class="icon-size">112px</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var icons = document.querySelectorAll('.content .f7-icons');
+    function showPreview(e) {
+      var icon = e.target.textContent;
+      var previewIcons = document.querySelectorAll('.icon-preview .f7-icons');
+      for (var j = 0; j < previewIcons.length; j++) {
+        previewIcons[j].textContent = icon;
+      }
+      document.querySelector('.icon-preview').style.display = 'block';
+      document.querySelector('.icon-preview-name b').textContent = icon;
+    }
+    for (var i = 0; i < icons.length; i++) {
+      icons[i].addEventListener('click', showPreview);
+    }
+  </script>
+</body>
+</html>
