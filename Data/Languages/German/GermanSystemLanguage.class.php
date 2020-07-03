@@ -26,7 +26,7 @@ class GermanSystemLanguage
 	{
 		
 		$this->data['gameTitle'] 			= 'Phramework';
-		$this->data['subTitle'] 			= 'Browser Spiel Engine';
+		$this->data['subTitle'] 			= 'Login & Account System';
 		$this->data['pressToStart'] 		= 'Einloggen oder Registrieren um zu Starten';
 		$this->data['copyrightNotice'] 		= 'Copyright 2020+ by Fhiz';
 		

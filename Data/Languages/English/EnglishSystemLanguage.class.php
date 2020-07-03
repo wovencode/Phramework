@@ -26,7 +26,7 @@ class EnglishSystemLanguage
 	{
 	
 		$this->data['gameTitle'] 			= 'Phramework';
-		$this->data['subTitle'] 			= 'Browser game engine';
+		$this->data['subTitle'] 			= 'Login & Account System';
 		$this->data['pressToStart'] 		= 'Login or Register to Start';
 		$this->data['copyrightNotice'] 		= 'Copyright 2020+ by Fhiz';
 	
