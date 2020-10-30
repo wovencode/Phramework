@@ -2,10 +2,6 @@ Phramework
 ---
 by Fhiz<br>
 
-Live Demo
----
-http://wovencode.net/Phramework
-
 Quick Start
 ---
 
